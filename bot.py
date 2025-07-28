@@ -10,7 +10,7 @@ bot = telebot.TeleBot(BOT_TOKEN)
 
 @bot.message_handler(commands=['start', 'hello'])
 def send_welcome(message):
-    bot.reply_to(message, "Howdy, how are you doing?")
+    bot.reply_to(message, "Hi! Im Iscreamy, your helpful to-do list assistant. How can I help?")
 
 @bot.message_handler(func=lambda msg: True)
 def echo_all(message):
